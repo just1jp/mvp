@@ -1,20 +1,21 @@
 # ReferPop #
 > Reward your biggest fans to refer new customers.
 
-# The Problem #
+# Problem #
 > Making a new product launch go viral is extremely challenging and there are few tools for rewarding customer referrals.
 
-# The Solution #
-> Simple rewards system for customers to refer friends with a sharable link.
+# Solution #
+> Simple rewards system for customers to refer friends.
 
-# How to Get Started #
+# Getting Started #
 > Set up your rewards tiers and start referring customers immediately.
-
-# Testimonial #
-> When my team launched our startup, we had to build a referral application from scratch because there were no simple solutions on the market that met our budget and needs. ReferPop is simple yet flexible and I'm using it for my next product launch.
 
 # Getting Started #
 > Setup your campaign in less than 5 minutes and empower your best customers today!
+
+# Testimonials #
+> When my team launched our startup, we had to build a referral application from scratch because there were no simple solutions on the market that met our budget and needs. ReferPop is simple yet flexible and I'm using it for my next product launch. -Justin M, Former COO @ BODY App
+
 
 
 <!-- 

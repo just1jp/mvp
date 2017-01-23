@@ -1,0 +1,28 @@
+{
+  "name": "ReferalPop",
+  "version": "1.1.0",
+  "description": "Simple rewards system for customers to refer friends",
+  "author": "Justin Mendelson",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "scripts": {
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.2",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "express": "^4.13.4",
+    "express-partials": "^0.2.0",
+    "body-parser": "^1.15.0",
+    "bcrypt-nodejs": "0.0.3",
+    "request": "^2.34.0",
+    "mysql": "^2.4.2",
+    "sequelize": "^3.21.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "2.3.3",
+    "sinon": "1.17.3"
+  }
+}
