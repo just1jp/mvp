@@ -15,15 +15,20 @@ class App extends React.Component {
 
   handleLogin(e) {
     e.preventDefault();
-    this.setState(prevState => ({
-      isLoggedIn: !prevState.isLoggedIn
-    }));
-    
+    var app = this;
+  
     axios.post('/login', {
         email: this.state.email
       })
       .then(function (response) {
-        console.log(response);
+        if (response.data === 1062) {
+          console.log('cant login');
+        } else {
+          console.log(response.data.email + ' logged in');
+          app.setState(prevState => ({
+            isLoggedIn: !prevState.isLoggedIn
+          }));
+        }
       })
       .catch(function (error) {
         console.log(error);

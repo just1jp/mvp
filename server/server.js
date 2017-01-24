@@ -8,7 +8,7 @@ var mysql = require('mysql');
 var Sequelize = require('sequelize');
 var parser = require('body-parser');
 
-var User = require('../db/schema')
+var db = require('../db/schema')
 
 /************************************************************/
 // Server Setup
@@ -38,6 +38,18 @@ app.use(express.static(__dirname + '/../public'));
 
 app.post('/login', function(req, res) {
   console.log(req.body.email);
+  db.User.build({
+    email: req.body.email,
+    link: 'http://localhost:8000/3jifa',
+    referrals: 0
+  })
+  .save()
+  .then(function(user) {
+    res.json(user);
+  })
+  .catch(function(error) {
+    res.json(error.original.errno);
+  })
 })
 
 

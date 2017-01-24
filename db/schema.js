@@ -15,7 +15,10 @@ sequelize
   });
 
 var User = sequelize.define('user', {
-  email: {type: Sequelize.STRING},
+  email: {
+    type: Sequelize.STRING,
+    unique: true
+  },
   link: {type: Sequelize.STRING},
   referrals: {type: Sequelize.INTEGER}
 })
