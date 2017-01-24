@@ -19,7 +19,7 @@ var User = sequelize.define('user', {
     type: Sequelize.STRING,
     unique: true
   },
-  link: {type: Sequelize.STRING},
+  referralCode: {type: Sequelize.STRING},
   referrals: {type: Sequelize.INTEGER}
 })
 

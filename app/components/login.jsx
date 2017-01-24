@@ -5,14 +5,19 @@ class Login extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="text-center login">
+        <div className="logo">
+          <img src="assets/img/cotton_candy.png"/>
+          <span>ReferralCandy</span>
+        </div>
+        <h4 className="sub-heading">Refer friends. Receive Rewards.</h4>
         <form onSubmit={this.props.handleLogin}>
-          <label>
-            Email:
-            <input type="text" name="email" value={this.props.email} onChange={this.props.updateEmail}/>
-          </label>
-          <input type="submit" value="Step Inside"/>
+          <input className="email-input" placeholder="Your Email" type="text" name="email" value={this.props.email} onChange={this.props.updateEmail}/>
+          <input className="email-submit" type="submit" value="Step Inside"/>
         </form>
+        <div className="home-gif">
+          <img src="assets/img/rockstar_chick.gif"/>
+        </div>
       </div>
     );
   }

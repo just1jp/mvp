@@ -1,0 +1,144 @@
+@font-face {
+  font-family: 'Giddyup';
+  src: url('assets/fonts/GiddyupStd.eot'); /* IE9 Compat Modes */
+  src: url('assets/fonts/GiddyupStd.woff') format('woff'), /* Pretty Modern Browsers */
+       url('assets/fonts/GiddyupStd.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'GillSans';
+  src: url('assets/fonts/GillSans.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'GillSans-Light';
+  src: url('assets/fonts/GillSans-Light.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+.login, .dashboard {
+  height: 100vh;
+}
+
+.login {
+  padding: 50px 15px;
+}
+
+.login {
+  background: #FBFF87;
+}
+
+.logo span {
+  color: #F846D2;
+  font-size: 80px;
+  line-height: initial;
+  font-family: 'Giddyup', Helvetica;
+  vertical-align: middle;
+}
+
+.logo img {
+  vertical-align: middle;
+  position: relative;
+  bottom: 10px;
+}
+
+.sub-heading {
+  font-family: 'GillSans', Arial;
+  font-size: 30px;
+  color: #A60098;
+  margin-bottom: 30px;
+}
+
+.email-input {
+  font-family: 'GillSans', Arial;
+  border: 3px solid #A60098;
+  color: #A60098;
+  background: rgba(0,0,0,0);
+  text-align: center;
+  margin-right: 10px;
+  width: 300px;
+  padding: 5px;
+}
+
+.email-input::-webkit-input-placeholder {
+  color: #A60098;
+}
+
+.email-submit {
+  font-family: 'GillSans', Arial;
+  border: 3px solid #A60098;
+  background: #A60098;
+  padding: 5px;
+  width: 150px;
+  color: white;
+  cursor: pointer;
+}
+
+.home-gif img {
+  height: 60vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 0;
+}
+
+.header-content {
+  background: #45FFC2;
+  padding: 60px 0;
+}
+
+.header-content h1,
+.header-content h5 {
+  color: #004FFF;
+  font-family: 'GillSans', Arial;
+}
+
+.header-content h1 {
+  font-size: 50px;
+  line-height: 60px;
+  margin-bottom: 10px;
+}
+
+.header-content h5 {
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.referral-code {
+  font-size: 22px;
+  line-height: 28px;
+  font-family: 'GillSans-Light', Arial;
+  width: 500px;
+  margin: auto;
+  border: 3px solid #0050FF;
+  padding: 6px;
+  color: #0050ff;
+}
+
+.rewards-content {
+  margin: 0;
+}
+
+.rewards-content-details {
+  color: #0050ff;
+  font-family: 'GillSans', Arial;
+  padding: 50px 0;
+}
+
+.rewards-content-gif img {
+  height: 400px;
+}
+
+.rewards-content-details img {
+  margin-top: 20px;
+  height: 150px;
+  width: auto;
+}
+
+
+
+
+
+
+

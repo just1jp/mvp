@@ -1,9 +1,21 @@
+var attributeReferral = (referrerCode) => {
+  axios.post('/referral', {
+    referrer: referrerCode
+  }).then(function(response) {
+    console.log(response);
+  }).catch(function(error) {  
+    console.log(error);
+  })
+}
+
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       isLoggedIn: false,
-      email: ''
+      email: '',
+      user: '',
+      referrer: ''
     };
     this.handleLogin = this.handleLogin.bind(this);
   }
@@ -16,6 +28,8 @@ class App extends React.Component {
   handleLogin(e) {
     e.preventDefault();
     var app = this;
+    var referrer;
+    (window.location.pathname.slice(1) === '') ? (referrer = 'none') : (referrer = window.location.pathname.slice(1))
   
     axios.post('/login', {
         email: this.state.email
@@ -24,9 +38,11 @@ class App extends React.Component {
         if (response.data === 1062) {
           console.log('cant login');
         } else {
-          console.log(response.data.email + ' logged in');
+          attributeReferral(referrer);
           app.setState(prevState => ({
-            isLoggedIn: !prevState.isLoggedIn
+            isLoggedIn: !prevState.isLoggedIn,
+            user: response.data,
+            referrer: referrer
           }));
         }
       })
@@ -41,7 +57,9 @@ class App extends React.Component {
     return (
       <div>
         {
-          !isLoggedIn ? (<Login email={this.state.email} updateEmail={this.updateEmail.bind(this)} handleLogin={this.handleLogin.bind(this)}/>) : (<Dashboard/>)
+          !isLoggedIn ? 
+          (<Login email={this.state.email} updateEmail={this.updateEmail.bind(this)} handleLogin={this.handleLogin.bind(this)}/>) :
+          (<Dashboard user={this.state.user}/>)
         }
       </div>
     );
