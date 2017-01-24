@@ -8,6 +8,8 @@ var mysql = require('mysql');
 var Sequelize = require('sequelize');
 var parser = require('body-parser');
 
+var User = require('../db/schema')
+
 /************************************************************/
 // Server Setup
 /************************************************************/
@@ -34,7 +36,9 @@ app.use(express.static(__dirname + '/../public'));
 // Routing
 /************************************************************/
 
-
+app.post('/login', function(req, res) {
+  console.log(req.body.email);
+})
 
 
 
